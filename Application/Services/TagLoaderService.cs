@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Application.Services
 {
-    internal class TagLoaderService : ITagLoaderService
+    public class TagLoaderService : ITagLoaderService
     {
         private readonly ITagsRepository _tagsRepository;
         private readonly IStackOverflowClient _stackOverflowClient;
@@ -48,7 +48,7 @@ namespace Application.Services
             {
                 _logger.LogInformation("Starting to fetch tags from the StackOverflow API.");
 
-                while (totalFetched <= targetFetchCount)
+                while (totalFetched < targetFetchCount)
                 {
                     _logger.LogInformation("Fetching page {Page} with page size {PageSize}.", page, pageSize);
 

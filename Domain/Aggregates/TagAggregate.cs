@@ -1,6 +1,5 @@
 ﻿using Domain.Entities;
 using Domain.ValueObjects;
-using System.Net.NetworkInformation;
 
 namespace Domain.Aggregates
 {
