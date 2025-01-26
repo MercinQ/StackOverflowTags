@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
-    internal class TagsRepository : ITagsRepository
+    public class TagsRepository : ITagsRepository
     {
         private readonly IDbContextFactory<ApplicationDbContext> _contextFactory;
 

@@ -1,8 +1,14 @@
-﻿using Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using StackOverflowTags.Integration.Tests.Data.Entitites;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Infrastructure
+namespace StackOverflowTags.Integration.Tests.Data
 {
+
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Tag> Tags { get; set; }
@@ -20,4 +26,5 @@ namespace Infrastructure
             });
         }
     }
+
 }

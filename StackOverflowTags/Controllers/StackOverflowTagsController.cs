@@ -22,7 +22,7 @@ namespace StackOverflowTags.Controllers
         [SwaggerOperation(
             Description = "This endpoint retrieves tags filtered by page, pageSize (0 - 100), sortBy (Name, Percentage), sortOrder (Asc, Desc)"
         )]
-        [ProducesResponseType(typeof(IEnumerable<TagDto>), 200)]
+        [ProducesResponseType(typeof(PaginatedTagsResult), 200)]
         [SwaggerResponse(500, "An unexpected error occurred.")]
         [SwaggerResponse(400, "Invalid OrderBy value: {value}")]
         [SwaggerResponse(400, "Invalid SortBy value: {value}")]
@@ -43,13 +43,13 @@ namespace StackOverflowTags.Controllers
 
         [HttpPost]
         [SwaggerOperation(
-            Description = "This endpoint remove old tags and load new to database)"
+            Description = "This endpoint remove old tags and load new 1000 tags to database)"
         )]
         [SwaggerResponse(500, "An unexpected error occurred.")]
         [SwaggerResponse(200)]
         public IActionResult LoadTags()
         {
-            const int targetFetchCount = 100;
+            const int targetFetchCount = 1000;
             const int page = 100;
             _tagLoaderService.FetchAndStoreTagsAsync(targetFetchCount, page).ConfigureAwait(false);
 

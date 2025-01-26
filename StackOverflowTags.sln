@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests", "Domain.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Tests", "Application.Tests\Application.Tests.csproj", "{096AF308-6089-4C16-A522-4CEE70D15F3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowTags.IntegrationTests", "StackOverflowTags.IntegrationTests\StackOverflowTags.IntegrationTests.csproj", "{D4506D5F-04A8-47D4-B835-155E9967D2DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{096AF308-6089-4C16-A522-4CEE70D15F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{096AF308-6089-4C16-A522-4CEE70D15F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{096AF308-6089-4C16-A522-4CEE70D15F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4506D5F-04A8-47D4-B835-155E9967D2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4506D5F-04A8-47D4-B835-155E9967D2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4506D5F-04A8-47D4-B835-155E9967D2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4506D5F-04A8-47D4-B835-155E9967D2DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

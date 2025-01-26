@@ -20,3 +20,13 @@ services:
     environment:
       SA_PASSWORD: "Password123!"
       ACCEPT_EULA: "Y"
+
+  db_test:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_server_test
+    ports:
+      - "1434:1433"
+    environment:
+      SA_PASSWORD: "Password123!"
+      ACCEPT_EULA: "Y"
+
